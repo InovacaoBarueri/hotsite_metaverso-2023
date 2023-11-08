@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Barueri Agora Está No Metaverso</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="A prefeitura de Barueri chegou no metaverso. Venha conhecer mais sobre esse novo mundo.">
+  <meta name="keywords" content="metaverso, avatar, óculos, realidade aumentada, meta, hubs">
+  <link rel="canonical" href=" https://portal.barueri.sp.gov.br/cit/metaverso" />
+  <meta name="author" content="Inovação Barueri">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="shortcut icon" href="assets/img/cit-favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R96G9RL7WQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R96G9RL7WQ');
+</script>
+
+</head>
+
+<body>
+  <!-- <div id="barra-endereco"></div> -->
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <!-- <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.png" alt="Global">
+      <p>Global</p>
+    </a>
+    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p>
+  </div> -->
+
+  <!-- content -->
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/inovacao-logo-branco.png" alt="Logotipo do inovação Barueri">
+              <!-- <p>Global</p> -->
+            </a>
+
+            <div class="modal-header">
+              <div class="box-select">
+                <div id="google_translate_element2"></div>
+              </div>            
+              <!-- <button class="header--cta cta">Hire Us</button> -->
+              <div>
+                <div class="header--nav-toggle">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Barueri no Metaverso</span></li>
+              <li><span>O Que é o Metaverso?</span></li>
+              <li><span>Jonatas no Metaverso</span></li>
+              <li><span>Mapa do Metaverso</span></li>
+              <li><span>CIT no Metaverso</span></li>
+              <li><span>Cursos no Metaverso</span></li>
+              <li><span>Inovação no Metaverso</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li id="home" class="l-section section section--is-active">
+              <div class="intro home">
+                <div class="intro--banner">
+                  <h1>Barueri<br>Além do<br>Universo</h1>
+                  <!-- <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button> -->
+                  <p>O Centro de Inovação e Tecnologia de Barueri agora está no metaverso. Conheça nossa estrutura de
+                    uma maneira jamais vista</p>
+                  <button class="cta">Acesse</button>
+                  <img src="assets/img/avatar-metaverso-home.png" alt="Avatar do Metaverso com o óculos VR"
+                    class="avatar-home animate">
+                </div>
+                <div class="intro--options">
+                  <!-- <a href="#0">
+                  <h3>Metiew &amp; Smith</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+                  <a href="#0">
+                    <h3>Internet e Marketing Digital</h3>
+                    <p>O CIT é o primeiro órgão público a oferecer um curso dentro do metaverso</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Sala do CIT</h3>
+                    <p>O CIT também é pioneiro na criação de uma sala dentro do metaverso</p>
+                  </a>
+                </div>
+              </div>
+              <div id="bg">
+                <!-- <canvas></canvas>
+                <canvas></canvas>
+                <canvas></canvas> -->
+                <canvas id="canvas"></canvas>
+              </div>
+            </li>
+            <li id="teste" class="l-section section section info-section">
+              <div class="intro rain-container">
+                <div class="intro--banner">
+                  <img src="assets/img/avatar-metaverso-info.png" alt="Avatar do Metaverso com o óculos VR"
+                    class="avatar-info animate">
+                  <h1 class="h-info">O que é o<br>metaverso?</h1>
+                  <!-- <button class="cta">Hire Us
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                  <span class="btn-background"></span>
+                </button> -->
+                  <p class="p-info">O metaverso é um novo universo totalmente online, onde proporciona uma experiência
+                    imersiva com o uso das tecnologias de realidade virtual.
+                    Dentro dele é possível interagir com o avatar de outras pessoas, jogar e até mesmo trabalhar.</p>
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>Acesse sem pagar nada</h3>
+                    <p>
+                      Você pode entar no metaverso de maneira gratuita com a plataforma Mozilla Hubs.
+                      <!-- Você pode entar no metaverso sem . -->
+                    </p>
+                  </a>
+                  <a href="#0">
+                    <h3>Precisa do óculos para entrar?</h3>
+                    <p>Para entrar no metaverso não é obrigatório o uso do óculos de realidade aumentada. Mas para uma
+                      melhor experiência o uso dele é indispensável.</p>
+                  </a>
+                  <!-- <a href="#0">
+                  <h3>Paul &amp; shark</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                </a> -->
+                </div>
+                <!-- <div class="rain-container"></div> -->
+              </div>
+              <!-- <div class="area" >
+              <ul class="circles">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+              </ul>
+      </div > -->
+              <div class="stars-bg">
+                <canvas id="stars"></canvas>
+              </div>
+            </li>
+            <!-- <li class="l-section section">
+            <div class="work">
+              <h2>Selected work</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-victory.jpg" alt="Victory">
+                      </div>
+                      <p class="slider--item-title">Victory</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                      </div>
+                      <p class="slider--item-title">Metiew &amp; Smith</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                      </div>
+                      <p class="slider--item-title">Alex Nowak</p>
+                      <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li> -->
+            <li class="l-section section">
+              <div class="about jonatas-metaverso">
+                <div class="about--banner">
+                  <h2>Jonatas Randal<br>no Metaverso</h2>
+                  <!-- <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a> -->
+                <!-- <video autoplay muted loop playsinline > -->
+                  <!-- <source src="assets/img/randal_video.webm" type="video/mp4"> -->
+                  <!-- <source src="assets/img/randal_video.mp4" type="video/mp4"> -->
+                <!-- </video> -->
+                <img src="assets/img/randal.gif" alt="gif do avatar do jonatas randal" class="gif-jonatas">
+                  <p>
+                    Olá! Eu sou o Jonatas Randal, o primeiro secretário do metaverso. <br>
+                    Estou passando para avisar que você precisa conhecer a secretaria responsável por levar tecnologia
+                    para Barueri, que agora chegou em outro universo.
+                    <!-- Estou passando para avisar que você não pode perder a oportunidade de visitar a secretaria responsável por levar tecnologia para Barueri em um novo universo 100% virtual. -->
+                    <!-- Olá! Eu sou o Jonatas Randal, o primeiro secretário do metaverso. Conheça a nossa estrutura nesse novo mundo.   -->
+                    <!-- Seja bem-vindo ao metaverso! Entre no nosso novo ambiente e conheça a estrutura do lugar responsável por levar tecnologia e inovação para Barueri. -->
+                  </p>
+                  <button class="cta cta-randal">Conhecer o CIT no Metaverso</button>
+                  <!-- <img src="assets/img/about-visual.png" alt="About Us"> -->
+                </div>
+                <!-- <h4>Ambientes Digitais do CIT</h4>
+                <div class="about--options">
+                  <a href="#0">
+                    <h3>Curso</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Inovação barueri</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>CIT</h3>
+                  </a>
+                </div>-->
+              </div>
+              <!-- <div class="wave"></div> -->
+              <div class="canv">
+                <canvas id="canv"></canvas>
+              </div>
+            </li>
+            <!-- <li class="l-section section">
+            <div class="about salas-cit">
+              <div class="about--banner">
+                <img src="assets/img/about-visual.png" alt="About Us">
+                <h2>Salas<br>do CIT<br>no Metaverso</h2>
+                COMEÇO COMENTARIO
+                <a href="#0">Career
+                  <span>
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                    <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                      <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                    </g>
+                    </svg>
+                  </span>
+                </a>
+                FIM COMENTARIO
+                <p>Visite as incriveis salas do CIT dentro do metaverso</p>
+                COMEÇO COMENTARIO
+                <video autoplay muted loop>
+                  <source src="assets/img/randal_video.webm" type="video/mp4">
+                </video>
+                FIM COMENTARIO
+              </div>
+              <div class="box_about--options">
+                <div class="about--options">
+                  <a href="#0">
+                    <h3>Curso</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>Inovação barueri</h3>
+                  </a>
+                  <a href="#0">
+                    <h3>GT</h3>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li> -->
+          <li class="l-section section">
+            <!-- <h2 class="heading-sala">Inovação Barueri no Metaverso</h2> -->
+
+            <a target="_blank" href="https://inovacao.barueri.sp.gov.br/receptivo-no-metaverso/">
+              <div class="contact sec-mapa">
+                <div class="contact--lockup mapa">
+                  <!-- <div class="modal"> -->
+                    <!-- <p>
+                      O Inovação Barueri, como o nome já diz, é o responsável por levar Inovação para a cidade de Barueri. E assim como o CIT, o Inovação também tem seu lugar reservado no metaverso. Chegando nesse mundo é normal você se perder com tantos equipamentos e projetos inovadores, mas fique tranquilo, aqui vai uma lista para te ajudar:
+                    </p> -->
+                    <!-- <ul class="lista-topicos">
+                      <li class="topics-sala">
+                        Acesse a sala de aula do curso mais inovador que você verá
+                      </li>
+                      <li class="topics-sala">
+                        Veja o nosso estúdio de transmissão de lives
+                      </li>
+                      <li class="topics-sala">
+                        Conheça nossos programas
+                      </li>
+                      <li class="topics-sala">
+                        Visite nosso laboratório com computadores de última geração.
+                      </li>
+                      <li class="topics-sala">
+                        Visite o SmartLab com os mais inovadores equipamentos, como a impressora 3D
+                      </li>
+                      <li class="topics-sala">
+                        Veja nossos projetos feitos na impressora 3D
+                      </li>
+                    </ul> -->
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>-->
+                    <!-- <ul class="modal--options">
+                      <a target="_blank" href="https://hub.link/Pcoa98z">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Conhecer
+                      </a>
+                    </ul> -->
+                  <!-- </div> -->
+                  <img src="assets/img/mapas/mapa metaverso barueri.png" alt="" class="img-pc">
+                  <img src="assets/img/mapas/mapa metaverso barueri.png" alt="" class="img-pc-maior">
+                  <img src="assets/img/mapas/mapa-metaverso680.png" alt="" class="img-tablet">
+                  <img src="assets/img/mapas/mapa-metaverso480.png" alt="" class="celular">
+                  <img src="assets/img/mapas/mapa-metaverso480.png" alt="" class="celular-menor">
+  
+                  <!-- <map name="pc">
+                    <area shape="rect" coords="390,140,1190,250" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="520,340,1010,500" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="1780,180,1900,280" alt="Computer" href="#sec-inovacao">
+                  </map>
+  
+                  <map name="tablet">
+                    <area shape="rect" coords="890,340,1190,420" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="1030,540,790,640" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="1160,380,1360,520" alt="Computer" href="#sec-inovacao">
+                  </map>
+  
+                  <map name="celular">
+                    <area shape="rect" coords="710,370,990,420" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="1060,540,740,670" alt="Computer" href="#sec-inovacao">
+                    <area shape="rect" coords="760,380,990,520" alt="Computer" href="#sec-inovacao">
+                  </map> -->
+                </div>
+  
+              </div>
+            </a>
+          </li>
+
+            <li class="l-section section">
+              <h2 class="heading-sala out">CIT no Metaverso</h2>
+
+              <div class="contact sec-cit">
+                <div class="contact--lockup">
+                  <div class="modal"> 
+              <h2 class="heading-sala in">CIT no Metaverso</h2>
+
+                    <p>
+                      O CIT, como de costume, criou mais um inovador projeto, mas dessa vez em um mundo totalmente virtual, viaje para esse novo ambiente e se divirta.
+                      <br><br>
+                      Chegando lá você pode realizar diversas atividades, como:
+                    </p>
+                    <!-- <br> -->
+                    <ul class="lista-topicos">
+                      <li class="topics-sala">
+                        Visita <b>imersiva</b> ao CIT
+                      </li>
+                      <li class="topics-sala">
+                        Visitar os departamento de <b>desenvolvimento de sistemas</b>, responsável pelo desenvolvimento dos aplicativos da prefeitura
+                      </li>
+                      <li class="topics-sala">
+                        Visitar os departamento de <b>infraestrutura</b>, responsável pelo suporte de TI em Barueri
+                      </li>
+                      <li class="topics-sala">
+                        Conhecer o Jonatas, o primeiro secretário a chegar no <b>metaverso</b>
+                      </li>
+                      <li class="topics-sala">
+                        E muito mais!
+                      </li>
+                    </ul>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>-->
+                    <ul class="modal--options">
+                      <!-- <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li> -->
+                      <!-- <li><a target="_blank" href="https://hub.link/Pcoa98z">Entrar</a></li> -->
+                      <a target="_blank" href="https://inovacao.barueri.sp.gov.br/receptivo-no-metaverso/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Visitar
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <h2 class="heading-sala out">AAI - ambiente de aprendizado imersivo no metaverso</h2>
+
+              <div class="contact sec-aai">
+                <div class="contact--lockup">
+                  <div class="modal">
+              <h2 class="heading-sala in">AAI - ambiente de aprendizado imersivo no metaverso</h2>
+
+                    <!-- <p>Conheça o primeiro curso feito dentro do metaverso</p> -->
+                    <!-- <p>
+                      - Este INOVADOR curso te fará aprender a como entrar no metaverso.
+                      - Entenda os conceitos de marketing digital
+                      - Aprenda os conceitos básicos sobre redes sociais e mídias sociais.
+                      
+                      Você pode ser a primeira pessoa a fazer um curso dentro do metaverso. Vai perder essa
+                      oportunidade?
+                    </p> -->
+                    <p>
+                      <!-- Você sabe o que é AAI? AAI é um ambiente totalmente online de aprendizagem dentro do metaverso, e o Inovação Barueri é o pimeiro a entrar nessa área. Assista o primeiro curso que está dentro do metaverso, você pode ser o primeiro. Vai perder essa oportunidade? -->
+                      AAI é um ambiente de aprendizado imersivo dentro do metaverso, ou seja, agora é possível aprender dentro desse novo mundo. O Inovação Barueri criou o primeiro curso dentro do metaverso, entre na sala e aprenda de uma maneira jamais vista.
+                      <br>
+                      Mas o que você aprenderá nesses cursos? 
+                    </p>
+                    <!-- <br> -->
+                    <ul class="lista-topicos">
+                      <li class="topics-sala">
+                        Estes  cursos <b>INOVADORES</b> te fará aprender a como entrar no metaverso.
+                      </li>
+                      <li class="topics-sala">
+                        Use as <b>redes sociais</b> em benefício de seus negócios e aumente seu desempenho.
+                      </li>
+                      <li class="topics-sala">
+                        Aprenda os conceitos básicos sobre <b>redes sociais, mídias sociais e marketing digital</b>.
+                      </li>
+                      <li class="topics-sala">
+                        Conheça as profissões do <b>futuro do Marketing Digital</b>:  redes sociais, criação de conteúdo, branding, tráfego, expert, lançamento, design gráfico, copywriting, webdesign e-commerce.
+                      </li>
+                      <li class="topics-sala">
+                        Aprenda a usar <b>inteligência artificial</b> na sua criação de conteúdo, mesmo que seja um iniciante! 
+                      </li>
+                      <li class="topics-sala">
+                        Muito mais.
+                      </li>
+                    </ul>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>-->
+                    <ul class="modal--options">
+                      <!-- <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li> -->
+                      <!-- <li><a target="_blank" href="https://hub.link/Pcoa98z">Entrar</a></li> -->
+                      <a target="_blank" href="https://inovacao.barueri.sp.gov.br/receptivo-no-metaverso/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        RECEPTIVO
+                      </a>
+                      <a target="_blank" href="https://www.sympla.com.br/play/curso-no-metaverso-internet-e-marketing-digital-do-zero-ao-atual-pratico/1672123?lang=PT">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CURSO MARKETING DIGITAL
+                      </a>
+                      <a target="_blank" href="https://www.sympla.com.br/play/inova-canva-design-com-inteligencia-artificial-no-metaverso/1724103">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CURSO INOVA+CANVA
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section" id="sec-inovacao">
+              <h2 class="heading-sala out">Inovação Barueri no Metaverso</h2>
+
+              <div class="contact sec-inovacao">
+                <div class="contact--lockup">
+                  <div class="modal">
+              <h2 class="heading-sala in">Inovação Barueri no Metaverso</h2>
+
+                    <p>
+                      Responsável pelo desenvolvimento de projetos inovadores  assim como o CIT, o Inovação também tem seu lugar reservado no metaverso. Chegando nesse mundo é normal você se perder com tantos equipamentos e projetos inovadores, mas fique tranquilo, aqui vai uma lista do que você encontrará:
+                    </p>
+                    <!-- <br> -->
+                    <ul class="lista-topicos">
+                      <li class="topics-sala">
+                        Acesse a sala de aula do curso mais <b>inovador</b> que você verá.
+                      </li>
+                      <li class="topics-sala">
+                        Faça uma visita <b>imersiva</b> aos estúdios da Tv Inovação Barueri.
+                      </li>
+                      <li class="topics-sala">
+                        Conheça os <b>programas</b> da TV Inovação Barueri.
+                      </li>
+                      <li class="topics-sala">
+                        Visita imersiva ao <b>SmartLab</b> com os mais inovadores equipamentos, como a impressora 3D.
+                      </li>
+                      <li class="topics-sala">
+                        Veja nossos projetos produzidos na <b>impressora 3D.</b>
+                      </li>
+                      <li class="topics-sala">
+                        Muito mais.
+                      </li>
+                    </ul>
+                    <!-- <div class="modal--information">
+                    <p>Pawia 5, 31-154 Kraków, Poland</p>
+                    <a href="mailto:ouremail@gmail.com">ouremail@gmail.com</a>
+                    <a href="tel:+148126287560">+48 12 628 75 60</a>
+                  </div>-->
+                    <ul class="modal--options">
+                      <!-- <li><a href="#0">Bēhance</a></li>
+                    <li><a href="#0">dribbble</a></li>
+                    <li><a href="mailto:ouremail@gmail.com">Contact Us</a></li> -->
+                      <!-- <li><a target="_blank" href="https://hub.link/Pcoa98z">Entrar</a></li> -->
+                      <a target="_blank" href="https://inovacao.barueri.sp.gov.br/receptivo-no-metaverso/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Conhecer
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="l-section section">
+            <div class="hire">
+              <h2>You want us to do</h2>
+              checkout formspree.io for easy form setup 
+              <form class="work-request">
+                <div class="work-request--options">
+                  <span class="options-a">
+                    <input id="opt-1" type="checkbox" value="app design">
+                    <label for="opt-1">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      App Design
+                    </label>
+                    <input id="opt-2" type="checkbox" value="graphic design">
+                    <label for="opt-2">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Graphic Design
+                    </label>
+                    <input id="opt-3" type="checkbox" value="motion design">
+                    <label for="opt-3">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Motion Design
+                    </label>
+                  </span>
+                  <span class="options-b">
+                    <input id="opt-4" type="checkbox" value="ux design">
+                    <label for="opt-4">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      UX Design
+                    </label>
+                    <input id="opt-5" type="checkbox" value="webdesign">
+                    <label for="opt-5">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Webdesign
+                    </label>
+                    <input id="opt-6" type="checkbox" value="marketing">
+                    <label for="opt-6">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
+                      </g>
+                      </svg>
+                      Marketing
+                    </label>
+                  </span>
+                </div>
+                <div class="work-request--information">
+                  <div class="information-name">
+                    <input id="name" type="text" spellcheck="false">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="information-email">
+                    <input id="email" type="email" spellcheck="false">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <input type="submit" value="Send Request">
+              </form>
+            </div>
+          </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Barueri no Metaverso</li>
+      <li>O Que é o Metaverso?</li>
+      <li>Jonatas no Metaverso</li>
+      <li>Mapa do Metaverso</li>
+      <li>CIT no Metaverso</li>
+      <li>Cursos no Metaverso</li>
+      <li>Inovação no Metaverso</li>
+    </ul>
+  </div>
+
+<!-- GTranslate: https://gtranslate.io/ -->
+<!-- <select onchange="doGTranslate(this);">
+  <option value="">Select Language</option><option value="pt|af">Afrikaans</option><option value="pt|sq">Albanian</option><option value="pt|ar">Arabic</option><option value="pt|hy">Armenian</option><option value="pt|az">Azerbaijani</option><option value="pt|eu">Basque</option><option value="pt|be">Belarusian</option><option value="pt|bg">Bulgarian</option><option value="pt|ca">Catalan</option><option value="pt|zh-CN">Chinese (Simplified)</option><option value="pt|zh-TW">Chinese (Traditional)</option><option value="pt|hr">Croatian</option><option value="pt|cs">Czech</option><option value="pt|da">Danish</option><option value="pt|nl">Dutch</option><option value="pt|en">English</option><option value="pt|et">Estonian</option><option value="pt|tl">Filipino</option><option value="pt|fi">Finnish</option><option value="pt|fr">French</option><option value="pt|gl">Galician</option><option value="pt|ka">Georgian</option><option value="pt|de">German</option><option value="pt|el">Greek</option><option value="pt|ht">Haitian Creole</option><option value="pt|iw">Hebrew</option><option value="pt|hi">Hindi</option><option value="pt|hu">Hungarian</option><option value="pt|is">Icelandic</option><option value="pt|id">Indonesian</option><option value="pt|ga">Irish</option><option value="pt|it">Italian</option><option value="pt|ja">Japanese</option><option value="pt|ko">Korean</option><option value="pt|lv">Latvian</option><option value="pt|lt">Lithuanian</option><option value="pt|mk">Macedonian</option><option value="pt|ms">Malay</option><option value="pt|mt">Maltese</option><option value="pt|no">Norwegian</option><option value="pt|fa">Persian</option><option value="pt|pl">Polish</option><option value="pt|pt">Portuguese</option><option value="pt|ro">Romanian</option><option value="pt|ru">Russian</option><option value="pt|sr">Serbian</option><option value="pt|sk">Slovak</option><option value="pt|sl">Slovenian</option><option value="pt|es">Spanish</option><option value="pt|sw">Swahili</option><option value="pt|sv">Swedish</option><option value="pt|th">Thai</option><option value="pt|tr">Turkish</option><option value="pt|uk">Ukrainian</option><option value="pt|ur">Urdu</option><option value="pt|vi">Vietnamese</option><option value="pt|cy">Welsh</option><option value="pt|yi">Yiddish</option><option value="pt|bn">Bengali</option><option value="pt|bs">Bosnian</option><option value="pt|ceb">Cebuano</option><option value="pt|eo">Esperanto</option><option value="pt|gu">Gujarati</option><option value="pt|ha">Hausa</option><option value="pt|hmn">Hmong</option><option value="pt|ig">Igbo</option><option value="pt|jw">Javanese</option><option value="pt|kn">Kannada</option><option value="pt|km">Khmer</option><option value="pt|lo">Lao</option><option value="pt|la">Latin</option><option value="pt|mi">Maori</option><option value="pt|mr">Marathi</option><option value="pt|mn">Mongolian</option><option value="pt|ne">Nepali</option><option value="pt|pa">Punjabi</option><option value="pt|so">Somali</option><option value="pt|ta">Tamil</option><option value="pt|te">Telugu</option><option value="pt|yo">Yoruba</option><option value="pt|zu">Zulu</option>
+</select> -->
+
+<script type="text/javascript">
+function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'pt',autoDisplay: false}, 'google_translate_element2');}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <!-- <script src="assets/js/functions-min.js"></script> -->
+  <script src="assets/js/functions-min.js"></script>
+  <!-- <script src="assets/js/functions.js"></script> -->
+  <!-- BACKGROUND - BAUERI ALÉM DO UNIVERSO -->
+  <script src="assets/js/background-canvas.js"></script>
+  <!-- BACKGROUND - O QUE É O METAVERSO -->
+  <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+  <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+  <script src="assets/js/background-stars.js"></script>
+  <script src="assets/js/bg-galaxy.js"></script>
+  <script src="assets/js/background-home.js"></script>
+  <script src="assets/js/jquery.rwdImageMaps.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('img[usemap]').rwdImageMaps();
+    })
+  </script>
+</body>
+
+</html>
